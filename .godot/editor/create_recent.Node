@@ -1,0 +1,7 @@
+DirectionalLight3D
+AreaLight3D
+MeshInstance3D
+Camera3D
+StaticBody3D
+CollisionShape3D
+CharacterBody3D
