@@ -1,7 +1,11 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1788594623
-icon.svg::CompressedTexture2D::245368795354726891::1788593668::1788594623::1::::<><><>0<>0<>5ca969e8904a05e238fd1b7351d94cff<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-README.md::TextFile::-1::1788594200::0::1::::<><><>0<>0<><>::
-::res://scenes/::0
-::res://scripts/::0
-character_body_3d.gd::GDScript::9218958402101821413::1788594714::0::1::::<>CharacterBody3D<><>0<>0<><>::
+::res://::1788598110
+icon.svg::CompressedTexture2D::245368795354726891::1788598025::1788598113::1::::<><><>0<>0<>5ca969e8904a05e238fd1b7351d94cff<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1788598025::0::1::::<><><>0<>0<><>::
+::res://scenes/::1788598025
+::res://scenes/levels/::1788598025
+test_level.tscn::PackedScene::2854041260023969805::1788598025::0::1::::<><><>0<>0<><>::uid://dulqnxswig1ci::::res://scenes/playable_characters/first_playable.tscn
+::res://scenes/playable_characters/::1788598025
+first_playable.tscn::PackedScene::8586743003193704228::1788598025::0::1::::<><><>0<>0<><>::uid://d4ly5scbtqlv6::::res://scripts/character_body_3d.gd
+::res://scripts/::1788598025
+character_body_3d.gd::GDScript::9218958402101821413::1788598025::0::1::::<>CharacterBody3D<><>0<>0<><>::
