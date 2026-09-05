@@ -6,7 +6,7 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_fginx"]
 
-[node name="CharacterBody3D" type="CharacterBody3D" unique_id=670187141]
+[node name="Player3D" type="CharacterBody3D" unique_id=670187141]
 script = ExtResource("1_sebw7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2052694573]
@@ -14,6 +14,3 @@ shape = SubResource("CapsuleShape3D_fginx")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D" unique_id=2081074564]
 mesh = SubResource("CapsuleMesh_fginx")
-
-[node name="Camera3D" type="Camera3D" parent="." unique_id=22524685]
-transform = Transform3D(1, 0, 0, 0, 0.93621576, 0.35142586, 0, -0.35142586, 0.93621576, 0, 1.8279918, 2.77343)

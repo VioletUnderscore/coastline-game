@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bgwrv32wa6e5j"]
 
 [ext_resource type="PackedScene" uid="uid://dulqnxswig1ci" path="res://scenes/playable_characters/first_playable.tscn" id="1_jbqir"]
+[ext_resource type="Script" uid="uid://by52voceoucni" path="res://scenes/Scripts/camera_holder.gd" id="2_yautc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fginx"]
 size = Vector3(20, 1, 20)
@@ -18,8 +19,16 @@ shape = SubResource("BoxShape3D_fginx")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D/CollisionShape3D" unique_id=978831617]
 mesh = SubResource("BoxMesh_fginx")
 
-[node name="CharacterBody3D" parent="." unique_id=670187141 instance=ExtResource("1_jbqir")]
+[node name="CharacterBody3D" parent="." unique_id=1413643183 instance=ExtResource("1_jbqir")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8845477, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=559925746]
 transform = Transform3D(1, 0, 0, 0, 0.54549605, 0.8381134, 0, -0.8381134, 0.54549605, 0, 0, 0)
+
+[node name="CameraHolder" type="Node3D" parent="." unique_id=1518658830 node_paths=PackedStringArray("player")]
+top_level = true
+script = ExtResource("2_yautc")
+player = NodePath("../CharacterBody3D")
+
+[node name="Camera3D" type="Camera3D" parent="CameraHolder" unique_id=1933103037]
+transform = Transform3D(0.9999864, -0.0028836224, 0.004339993, -1.6148526e-09, 0.8329085, 0.55341077, -0.0052106343, -0.55340326, 0.8328971, 0, 2, 3)
